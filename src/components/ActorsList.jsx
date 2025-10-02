@@ -1,11 +1,11 @@
-import {useState, useEffect} from "react"
-import ActorCard from "./ActorCard"
+import {useState, useEffect} from "react";
+import ActorCard from "./ActorCard";
 
 export default function ActorsList() {
     const [actors, setActors] = useState ([]);
 
     function fetchActors() {
-        window.axios.get("https://lanciweb.github.io/demo/api/actresses/")
+        window.axios.get("https://lanciweb.github.io/demo/api/actors/")
         .then((res) =>  {
             console.log(res.data)
             setActors(res.data)            
@@ -17,18 +17,20 @@ export default function ActorsList() {
         fetchActors()  
     }, [])
 
-    return(
-        <>
-        <div className="container">
-              <div className="actors">
-                 {actors.map((actor) => (
-                     <ActorCard
-                        key={actor.id}
-                        actor={actor}
-                     />
-                 ))}
-             </div>
-         </div> 
-        </>
-    )
+        return(
+            <>
+            <div className="container">
+                  <div className="actors">
+                     {actors.map((actor) => (
+                         <ActorCard
+                            key={actor.id}
+                            actor={actor}
+                         />
+                     ))}
+                 </div>
+             </div> 
+            </>
+        )
 }
+
+
