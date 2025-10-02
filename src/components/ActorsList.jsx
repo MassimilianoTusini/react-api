@@ -20,7 +20,6 @@ export default function ActorsList() {
     return(
         <>
         <div className="container">
-            <h1>LISTA DEGLI ATTORI</h1>
               <div className="actors">
                  {actors.map((actor) => (
                      <ActorCard

@@ -4,7 +4,7 @@ export default function ActorCard(props) {
     return (
         <div className="actor">
             <div className="actor-img">
-                <img src={actor.image} alt={actor.name} />
+                <img src={actor.image} alt={actor.name}/>
             </div>
             <div className="actor-info">
                 <h3 className="actor-name">{actor.name}</h3>
