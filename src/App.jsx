@@ -1,5 +1,5 @@
 import './App.css'
-// import MyHeader from './components/MyHeader'
+import MyHeader from './components/MyHeader'
 import MyMain from './components/MyMain'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      {/* <MyHeader/> */}
+      <MyHeader/>
       <MyMain/>
     </>
   )
