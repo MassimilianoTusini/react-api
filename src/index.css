@@ -7,7 +7,7 @@
 
 body{
     font-family: "Forum", serif;
-    background: linear-gradient(135deg, #80b6f4, #b7d8fb, white);
+    background: linear-gradient(180deg, #5aa4f8, white, rgb(255, 189, 57));
 }
 
 .container{
@@ -19,7 +19,6 @@ body{
 /* Regole Header */
 header{
     background: linear-gradient(135deg, #0679e4, #58b7eb);
-    color: white;
     padding: 30px 15px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
@@ -27,9 +26,8 @@ header{
 }
 
 h1{
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-family: "Titan One", sans-serif;
+    font-size: 3rem;
 }
 
 /* Regole Card degli attori */
@@ -51,7 +49,6 @@ h1{
     width: 250px;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis:auto;
     cursor: pointer;
 }
 
